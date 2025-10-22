@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="calculatrice">
+  <meta name="author" content="sxno_der_toten">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Affichage de la calculatrice  -->
+  <div class="container">
+    <input type="text" class="resultat" readonly id="main" name="resultat">
+    <button onclick="cls('')" class="gradientcolor" type="button" name="effacer">C</button>
+    <button onclick="sign(main.value)" class="bouttons" type="button" name="plus-moins">&#177;</button>
+    <button onclick="show('%')"  id="mod" class="bouttons" type="button" name="pourcent">&#37;</button>
+    <button onclick="show('/')" id="div" class="bouttons" type="button" name="divison">&#247;</button>
+    <button onclick="show(7)" class="whitecolor" type="button" name="7">7</button>
+    <button onclick="show(8)" class="whitecolor" type="button" name="8">8</button>
+    <button onclick="show(9)" class="whitecolor" type="button" name="9">9</button>
+    <button onclick="show('*')"  id="mul" class="bouttons" type="button" name="multiplication">&#88;</button>
+    <button onclick="show(4)" class="whitecolor" type="button" name="4">4</button>
+    <button onclick="show(5)" class="whitecolor" type="button" name="5">5</button>
+    <button onclick="show(6)" class="whitecolor" type="button" name="6">6</button>
+    <button onclick="show('-')" id="subs" class="bouttons" type="button" name="soustraction">&#8722;</button>
+    <button onclick="show(1)" value="1" class="whitecolor" type="button" name="1">1</button>
+    <button onclick="show(2)" value="2" class="whitecolor" type="button" name="2">2</button>
+    <button onclick="show(3)" value="3" class="whitecolor" type="button" name="3">3</button>
+    <button onclick="show('+')" id="add" class="bouttons" type="button" name="addition">&#43;</button>
+    <button onclick="show(0)" class="zero" type="button" name="0">&#48;</button>
+    <button  onclick="comma('.')" id="virgule" class="bouttons virgule"  type="button" name="virgule">&#46;</button>
+    <button  onclick="calcul()" id="egal" class="gradientback egal" type="button" name="egal">&#61;</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
